@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love | Construa sites com IA</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .btn-animado {
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .btn-animado:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-700 to-blue-600 text-white">
+
+  <!-- Header fixo -->
+  <header class="w-full fixed top-0 left-0 z-50 bg-gradient-to-r from-purple-800 to-blue-700 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div></div>
+      <nav class="flex gap-6 items-center text-white font-medium">
+        <a href="#planos" class="hover:text-purple-200 transition">Planos</a>
+        <a href="#login" class="hover:text-purple-200 transition">Login</a>
+        <a href="#comecar" class="bg-white text-purple-700 px-5 py-2 rounded-full font-semibold hover:bg-purple-200 transition btn-animado shadow-xl">Comece Agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Crie seu site com IA em segundos</h1>
+    <p class="text-xl mb-8 max-w-xl">Com o Love, você gera sites profissionais automaticamente com inteligência artificial. Sem códigos. Sem complicações.</p>
+    <a id="comecar" href="#planos" class="bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-100 transition btn-animado shadow-xl">Comece Agora</a>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="py-20 px-6 text-center bg-white text-gray-900">
+    <h2 class="text-3xl font-bold mb-12">Por que escolher o Love?</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="p-6 bg-purple-100 rounded-lg shadow-lg">
+        <img src="https://img.icons8.com/ios-filled/50/000000/robot-2.png" class="mx-auto mb-4"/>
+        <h3 class="text-xl font-bold mb-2">100% Automático</h3>
+        <p>Nosso sistema gera sites completos com base em seu prompt.</p>
+      </div>
+      <div class="p-6 bg-purple-100 rounded-lg shadow-lg">
+        <img src="https://img.icons8.com/ios-filled/50/000000/paint-palette.png" class="mx-auto mb-4"/>
+        <h3 class="text-xl font-bold mb-2">Design Profissional</h3>
+        <p>Layouts modernos, responsivos e prontos para converter.</p>
+      </div>
+      <div class="p-6 bg-purple-100 rounded-lg shadow-lg">
+        <img src="https://img.icons8.com/ios-filled/50/000000/easy.png" class="mx-auto mb-4"/>
+        <h3 class="text-xl font-bold mb-2">Fácil de Usar</h3>
+        <p>Sem códigos, sem complicações. Crie tudo com poucos cliques.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-20 px-6 bg-gradient-to-br from-purple-600 to-blue-500 text-center">
+    <h2 class="text-3xl font-bold mb-12">O que nossos usuários dizem</h2>
+    <div class="max-w-4xl mx-auto space-y-8">
+      <blockquote class="bg-white bg-opacity-10 p-6 rounded-lg italic">"Em menos de 2 minutos eu tinha um site incrível no ar. Amei demais!"</blockquote>
+      <blockquote class="bg-white bg-opacity-10 p-6 rounded-lg italic">"O sistema é intuitivo, rápido e o design é lindo. Super recomendo!"</blockquote>
+      <blockquote class="bg-white bg-opacity-10 p-6 rounded-lg italic">"Eu gastava horas fazendo sites... agora é questão de segundos."</blockquote>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos" class="py-20 px-6 bg-white text-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-12">Escolha seu plano</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Plano Simples -->
+      <div class="p-8 border rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold mb-4">Simples</h3>
+        <p class="text-3xl font-bold mb-4">R$10/mês</p>
+        <ul class="mb-6 space-y-2 text-sm">
+          <li>✓ 5 sites por mês</li>
+          <li>✓ Templates modernos</li>
+          <li>✓ Suporte por e-mail</li>
+        </ul>
+        <a href="#" class="bg-purple-700 text-white px-5 py-2 rounded-full font-semibold hover:bg-purple-800 transition btn-animado">Assinar</a>
+      </div>
+
+      <!-- Plano Pro -->
+      <div class="p-8 border-4 border-purple-600 rounded-lg shadow-2xl bg-purple-50 transform scale-105">
+        <h3 class="text-xl font-bold mb-4">Pro</h3>
+        <p class="text-3xl font-bold mb-4">R$29/mês</p>
+        <ul class="mb-6 space-y-2 text-sm">
+          <li>✓ Sites ilimitados</li>
+          <li>✓ Templates premium</li>
+          <li>✓ IA avançada + editor visual</li>
+        </ul>
+        <a href="#" class="bg-purple-700 text-white px-5 py-2 rounded-full font-semibold hover:bg-purple-800 transition btn-animado">Assinar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="py-10 px-6 text-center bg-purple-800 text-white">
+    <p>© 2025 Love. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Animações ScrollReveal -->
+  <script>
+    ScrollReveal().reveal('section', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: false
+    });
+  </script>
+
+</body>
+</html>
